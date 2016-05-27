@@ -12,6 +12,6 @@ RUN apt-get -q update && apt-get install -yq --no-install-recommends \
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 
-RUN g++ -o hello hello.c
+RUN g++ -o hello hello.cpp
 
 CMD ./hello
