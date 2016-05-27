@@ -1,13 +1,23 @@
 #FROM resin/%%RESIN_MACHINE_NAME%%-debian
 #For RPi1
-FROM resin/rpi-raspbian
+FROM resin/rpi-raspbian:jessie
 
 #switch on systemd init system in container
 ENV INITSYSTEM on
 
 RUN apt-get -q update && apt-get install -yq --no-install-recommends \
+	git-core \
 	build-essential \
+	gcc \
+	python \
+	python-dev \
+	python-pip \
+	python-virtualenv \
 	&& apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN git clone git://git.drogon.net/wiringPi
+RUN cd wiringPi && ./build
+RUN pip install wiringpi2
 
 COPY . /usr/src/app
 WORKDIR /usr/src/app
