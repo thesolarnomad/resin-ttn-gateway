@@ -684,21 +684,21 @@ void parseCommandline(int argc, char *argv[])
 			std::string email_address = argv[i]+2;
 			strncpy(email, email_address.c_str(), 40);
 		}
-        else if ( 0 == strncasecmp(argv[i], "-lat", 2))
+        else if ( 0 == strncasecmp(argv[i], "-lat", 4))
         {
-            std::string latitude = argv[i]+2;
+            std::string latitude = argv[i]+4;
             lat = ::atof(latitude.c_str());
             std::cout << "Latitude: " << lat << std::endl;
         }
-        else if ( 0 == strncasecmp(argv[i], "-lon", 2))
+        else if ( 0 == strncasecmp(argv[i], "-lon", 4))
         {
-            std::string longitude = argv[i]+2;
+            std::string longitude = argv[i]+4;
             lon = ::atof(longitude.c_str());
             std::cout << "Longitude: " << lon << std::endl;
         }
-        else if ( 0 == strncasecmp(argv[i], "-alt", 2))
+        else if ( 0 == strncasecmp(argv[i], "-alt", 4))
         {
-            std::string altitude = argv[i]+2;
+            std::string altitude = argv[i]+4;
             alt = ::atoi(altitude.c_str());
             std::cout << "Altitude: " << alt << std::endl;
         }
