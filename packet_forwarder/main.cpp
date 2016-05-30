@@ -78,8 +78,8 @@ enum {
 
 // SX1272 - Raspberry connections
 int ssPin = 6;
-int dio0  = 5;
-int RST   = 6;
+int dio0  = 7;
+int RST   = 0;
 
 #define DEFAULTSERVER "croft.thethings.girovito.nl"
 #define DEFAULTPORT   1700   //The port on which to send data
