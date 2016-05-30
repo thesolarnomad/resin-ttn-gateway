@@ -688,16 +688,19 @@ void parseCommandline(int argc, char *argv[])
         {
             std::string latitude = argv[i]+2;
             lat = ::atof(latitude.c_str());
+            std::cout << "Latitude: " << lat << std::endl;
         }
         else if ( 0 == strncasecmp(argv[i], "-lon", 2))
         {
             std::string longitude = argv[i]+2;
             lon = ::atof(longitude.c_str());
+            std::cout << "Longitude: " << lon << std::endl;
         }
         else if ( 0 == strncasecmp(argv[i], "-alt", 2))
         {
             std::string altitude = argv[i]+2;
             alt = ::atoi(altitude.c_str());
+            std::cout << "Altitude: " << alt << std::endl;
         }
 	    else
 	    {
