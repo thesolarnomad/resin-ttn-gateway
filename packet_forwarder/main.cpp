@@ -71,21 +71,21 @@ int RST   = 0;
 sf_t sf = SF7;
 
 // Set center frequency
-uint32_t  freq = 916800000; // in Mhz! (916.8)
+uint32_t  freq = 868100000; // in Mhz! (868.1)
 
 // Set location
-float lat=-33.905015;
-float lon=151.26635299999998;
-int   alt=29;
+float lat=0.0;
+float lon=0.0;
+int   alt=0;
 
 /* Informal status fields */
 static char platform[24]    = "Single Channel Gateway";  /* platform definition */
-static char email[40]       = "joscha@feth.com";                        /* used for contact email */
-static char description[64] = "Bronte test gateway based on RPi";                        /* used for free form description */
+static char email[40]       = "";                        /* used for contact email */
+static char description[64] = "";                        /* used for free form description */
 
 // define servers
 // TODO: use host names and dns
-#define SERVER1 "40.114.249.243"    // The Things Network: router.au.thethings.network
+#define SERVER1 "54.72.145.119"    // The Things Network: croft.thethings.girovito.nl
 //#define SERVER2 "192.168.1.10"      // local
 #define PORT 1700                   // The port on which to send data
 
