@@ -684,9 +684,24 @@ void parseCommandline(int argc, char *argv[])
 			std::string email_address = argv[i]+2;
 			strncpy(email, email_address.c_str(), 40);
 		}
+        else if ( 0 == strncasecmp(argv[i], "-lat", 2))
+        {
+            std::string latitude = argv[i]+2;
+            lat = ::atof(latitude.c_str());
+        }
+        else if ( 0 == strncasecmp(argv[i], "-lon", 2))
+        {
+            std::string longitude = argv[i]+2;
+            lon = ::atof(longitude.c_str());
+        }
+        else if ( 0 == strncasecmp(argv[i], "-alt", 2))
+        {
+            std::string altitude = argv[i]+2;
+            alt = ::atoi(altitude.c_str());
+        }
 	    else
 	    {
-			std::cout << "Usage: " << argv[0] << " [-uSERVERNAMEORIP[:PORT]] [-sf(7-12)] [-fFREQUENCYHZ] [-eEMAIL]" << std::endl;
+			std::cout << "Usage: " << argv[0] << " [-uSERVERNAMEORIP[:PORT]] [-sf(7-12)] [-fFREQUENCYHZ] [-eEMAIL] [-latCOORD] [-lonCOORD] [-altALTITUDEMETERS]" << std::endl;
 			std::cout << "   Example: " << argv[0] << " -ucroft.thethings.girovito.nl" << std::endl;
 			std::cout << "   Example: " << argv[0] << " -ucroft.thethings.girovito.nl:1700" << std::endl;
 			std::cout << "   Example: " << argv[0] << " -u192.168.0.111 -sf8 -f868100000" << std::endl;
@@ -701,7 +716,9 @@ void parseCommandline(int argc, char *argv[])
 			std::cout << "     864100000Hz, 864300000Hz, 864500000Hz"  << std::endl;
 			std::cout << "   The 900MHz Range (902-928MHz) is currently not validated." << std::endl;
             std::cout << "   An email address can be supplied with -e (default is empty): " << std::endl;
-            std::cout << "   Example: -ebla@foo.com" << std::endl << std::endl;
+            std::cout << "   Example: -ebla@foo.com" << std::endl;
+            std::cout << "   Coordinates can be passed via -lat, -lon and -alt (default is 0): " << std::endl;
+            std::cout << "   Example: -lat33.0 -lon-100.0 -alt10" << std::endl << std::endl;
 
 			std::stringstream error;
 			error  << "Unknown command line parameter: ";
