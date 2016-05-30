@@ -20,4 +20,10 @@ WORKDIR /usr/src/app
 
 RUN cd packet_forwarder && make
 
-CMD ./packet_forwarder/single_chan_pkt_fwd
+CMD ./packet_forwarder/single_chan_pkt_fwd \
+	-u$HOSTS \
+	-e$EMAIL_ADDRESS \
+	-f$FREQUENCY \
+	-lat$LATITUDE \
+	-lon$LONGITUDE \
+	-alt$ALTITUDE
