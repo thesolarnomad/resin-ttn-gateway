@@ -1,0 +1,13 @@
+build:
+  build: ./
+  dockerfile: Dockerfile.template
+  command: "./packet_forwarder/single_chan_pkt_fwd"
+  environment:
+      EMAIL_ADDRESS:
+      FREQUENCY:
+      HOSTS:
+      EMAIL_ADDRESS:
+      FREQUENCY:
+      LATITUDE:
+      LONGITUDE:
+      ALTITUDE:
