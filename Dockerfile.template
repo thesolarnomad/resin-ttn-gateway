@@ -26,4 +26,7 @@ CMD ./packet_forwarder/single_chan_pkt_fwd \
 	-f$FREQUENCY \
 	-lat$LATITUDE \
 	-lon$LONGITUDE \
-	-alt$ALTITUDE
+	-alt$ALTITUDE \
+	-ss$SS_PIN \
+	-dio$DIO_PIN \
+	-rst$RST_PIN
