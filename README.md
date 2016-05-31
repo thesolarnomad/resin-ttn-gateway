@@ -27,6 +27,6 @@ It uses a Raspberry Pi Model B+ V1.2 and an [Modtronix inAir9](http://modtronix.
 | EMAIL_ADDRESS | you@domain.com                                                                        | Optional, empty by default.            |
 | FREQUENCY     | [Depends on your location and chip](https://github.com/TheThingsNetwork/gateway-conf) | Optional. In Hz. Defaults to 868100000 |
 | HOSTS         | [Depends on your location](https://github.com/TheThingsNetwork/gateway-conf)          | Optional                               |
-| LATITUDE      |                                                                                       | Optional. Float. Defaults to 0.0       |
-| LONGITUDE     |                                                                                       | Optional. Float. Defaults to 0.0       |
-| ALTITUDE      |                                                                                       | Optional. Integer. Defaults to 0       |
+| LATITUDE      | [Your latitude](http://www.gps-coordinates.net/)                                      | Optional. Float. Defaults to 0.0       |
+| LONGITUDE     | [Your longitude](http://www.gps-coordinates.net/)                                     | Optional. Float. Defaults to 0.0       |
+| ALTITUDE      | [Your altitude](http://www.gps-coordinates.net/)                                      | Optional. Integer. Defaults to 0       |
