@@ -58,7 +58,7 @@ Sorry about the mix & match of different Dupont cables, I didn't have male to fe
 
 You should be able to get most of the code from the instructables page (see link in the intro), however I needed to add
 
-```
+```cpp
 #define CFG_eu868 0
 #define CFG_us915 1
 ```
