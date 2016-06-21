@@ -29,15 +29,14 @@ It uses a Raspberry Pi Model B+ V1.2 and
 | DIO0                | DIO0   | [pin #7](http://pinout.xyz/pinout/pin7_gpio4)        | 7        |
 | RESET               | RST    | [pin #11](http://pinout.xyz/pinout/pin11_gpio17)     | 0        |
 
-### Example
-Sorry about the mix & match of different Dupont cables, I didn't have male to female ones available at the time I built this, so be careful with the colors when copying the mapping from the example pictures.
+### Examples
 
-#### Rpi pins
-![RPi pins](images/rpi.jpg)
+#### Rpi from top
+![RPi top](images/top.jpg)
 #### inAir9 mapping
 ![inAir9 mapping](images/breadboard.jpg)
-#### Both together
-![both](images/combined.jpg)
+#### Rpi from side
+![both](images/side.jpg)
 #### RPi pin table
 ![RPi pins](images/Pi-GPIO-header.png)
 #### inAir9 layout
