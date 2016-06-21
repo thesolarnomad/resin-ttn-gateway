@@ -8,20 +8,26 @@ With [resin.io](http://resin.io) you can easily manage multiple gateways on mult
 
 ## Hardware
 
-It uses a Raspberry Pi Model B+ V1.2 and an [Modtronix inAir9](http://modtronix.com/inair9.html) SX1276 LoRa Module.
+It uses a Raspberry Pi Model B+ V1.2 and
+
+* a [Modtronix inAir9](http://modtronix.com/inair9.html) SX1276 LoRa Module
+
+*OR*
+
+* a [Dragino Shield v.1.3](http://wiki.dragino.com/index.php?title=Lora_Shield).
 
 ## Default pin mapping:
 
-| SX1276 | Raspberry Pi                                         | WiringPi |
-|--------|------------------------------------------------------|----------|
-| 3.3V   | [pin #1](http://pinout.xyz/pinout/pin1_3v3_power)    |          |
-| GND    | [pin #6](http://pinout.xyz/pinout/ground)            |          |
-| MISO   | [pin #21](http://pinout.xyz/pinout/pin21_gpio9)      |          |
-| MOSI   | [pin #19](http://pinout.xyz/pinout/pin19_gpio10)     |          |
-| SCK    | [pin #23](http://pinout.xyz/pinout/pin23_gpio11)     |          |
-| NSS    | [pin #22](http://pinout.xyz/pinout/pin22_gpio25)     | 6        |
-| DIO0   | [pin #7](http://pinout.xyz/pinout/pin7_gpio4)        | 7        |
-| RST    | [pin #11](http://pinout.xyz/pinout/pin11_gpio17)     | 0        |
+| Dragino LoRa v 1.3  | inAir9 | Raspberry Pi                                         | WiringPi |
+|---------------------|--------|------------------------------------------------------|----------|
+| 3.3V                | 3.3V   | [pin #1](http://pinout.xyz/pinout/pin1_3v3_power)    |          |
+| ICSP GND            | GND    | [pin #6](http://pinout.xyz/pinout/ground)            |          |
+| ICSP MISO           | MISO   | [pin #21](http://pinout.xyz/pinout/pin21_gpio9)      |          |
+| ICSP MOSI           | MOSI   | [pin #19](http://pinout.xyz/pinout/pin19_gpio10)     |          |
+| ICSP SCK            | SCK    | [pin #23](http://pinout.xyz/pinout/pin23_gpio11)     |          |
+| Pin 10              | NSS    | [pin #22](http://pinout.xyz/pinout/pin22_gpio25)     | 6        |
+| DIO0                | DIO0   | [pin #7](http://pinout.xyz/pinout/pin7_gpio4)        | 7        |
+| RESET               | RST    | [pin #11](http://pinout.xyz/pinout/pin11_gpio17)     | 0        |
 
 ### Example
 Sorry about the mix & match of different Dupont cables, I didn't have male to female ones available at the time I built this, so be careful with the colors when copying the mapping from the example pictures.
@@ -36,6 +42,10 @@ Sorry about the mix & match of different Dupont cables, I didn't have male to fe
 ![RPi pins](images/Pi-GPIO-header.png)
 #### inAir9 layout
 ![inAir9 pins](images/inair_dimensions.gif)
+#### Arduino pin layout
+![Arduino pins](images/Arduino_pins.jpg)
+#### Dragino 1.3
+![Dragino 1.3 annotated](images/Lora_Shield-v13_annotated.jpg)
 
 ## Environment variables for resin.io
 
