@@ -43,7 +43,7 @@ byte currentMode = 0x81;
 char message[256];
 char b64[256];
 
-bool sx1272 = true;
+bool sx1272 = false;
 
 byte receivedbytes;
 
