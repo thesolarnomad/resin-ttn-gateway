@@ -33,8 +33,6 @@ It uses a Raspberry Pi Model B+ V1.2 and
 
 #### Rpi from top
 ![RPi top](images/top.jpg)
-#### inAir9 mapping
-![inAir9 mapping](images/breadboard.jpg)
 #### Rpi from side
 ![both](images/side.jpg)
 #### RPi pin table
